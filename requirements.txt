@@ -1,0 +1,15 @@
+streamlit>=1.37
+pandas
+numpy
+scikit-learn
+shap
+matplotlib
+plotly
+duckdb
+python-pptx
+reportlab
+streamlit-authenticator>=0.4
+pydantic>=2.0
+python-dotenv
+scipy
+joblib
