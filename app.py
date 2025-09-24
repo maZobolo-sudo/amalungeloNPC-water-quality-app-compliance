@@ -22,7 +22,7 @@ role = st.session_state.get("role","viewer"); name = st.session_state.get("name"
 WORKSPACE = st.secrets.get("workspace_key","default")
 ORG = st.secrets.get("org_name","Your Organization")
 for sub in ["data","models","reports"]: Path(f"tenants/{WORKSPACE}/{sub}").mkdir(parents=True, exist_ok=True)
-st.title("💧 Drinking Water Quality Classifier (End-to-End)")
+st.title("💧 Drinking Water Quality Classifier")
 st.caption(f"{ORG} • Signed in as **{name}** (role: {role}) • Workspace: **{WORKSPACE}**")
 st.info("Data and models are stored under this workspace only. Use Data Intake → EDA → Model → Scoring → Compliance.")
 st.sidebar.success("Use the pages to navigate →")
